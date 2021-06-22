@@ -1,18 +1,15 @@
-import photo from "../assets/cover-a1d5b40.png";
 import React from "react";
-import s from "./profile.module.css"
+import s from "./Profile.module.css"
+import {MyPosts} from "./MyPosts/MyPosts";
+import {ProfileInfo} from "./ProfileInfo/ProfileInfo";
+import {MyPostsContainer} from "./MyPosts/MyPostsContainer";
 
-export const Profile = () =>{
+export const Profile = (props) => {
+
     return (
         <div className={s.content}>
-            <img src={photo}/>
-            <div>ava+description</div>
-            <div>My posts</div>
-            <div>New post</div>
-            <div>
-                <div>post 1</div>
-                <div>post 2</div>
-            </div>
+            <ProfileInfo/>
+            <MyPostsContainer/>
         </div>
     )
 }

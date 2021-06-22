@@ -1,13 +1,12 @@
-import React from "react";
-
-export const Navbar = () => {
-    return (
-        <nav className='nav'>
-            <div><a href='#s'>Profile</a></div>
-            <div><a href='#s'>Messages</a></div>
-            <div><a href='#s'>News</a></div>
-            <div><a href='#s'>Music</a></div>
-            <div><a href='#s'>Settings</a></div>
-        </nav>
-    )
+.nav {
+    grid-area: n;
+    background-color: #617383;
+    padding: 10px
+}
+.item a{
+    color: white;
+    text-decoration: none;
+}
+.item a.activeLink {
+    color: #8eb8f1;
 }

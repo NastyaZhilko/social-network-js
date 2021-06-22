@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Music  = () => {
+export const Settings  = () => {
     return <div>
-        Music
+        Settings
     </div>
 }

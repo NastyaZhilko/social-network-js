@@ -1,10 +1,10 @@
-import logo from "../../assets/react-icon.svg";
-import React from "react";
-
-export const Header = () => {
-  return (
-    <header className='header'>
-        <img src={logo}/>
-    </header>
-  )
+.header {
+    grid-area: h;
+    background-color: #263040;
 }
+
+.header img {
+    width: 50px;
+    padding: 10px;
+}
+
