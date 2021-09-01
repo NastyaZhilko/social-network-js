@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/social-network-js/static/css/main.04f0e687.chunk.css",
-    "main.js": "/social-network-js/static/js/main.b3a3a64c.chunk.js",
-    "main.js.map": "/social-network-js/static/js/main.b3a3a64c.chunk.js.map",
+    "main.css": "/social-network-js/static/css/main.e1fc4815.chunk.css",
+    "main.js": "/social-network-js/static/js/main.16c9ae56.chunk.js",
+    "main.js.map": "/social-network-js/static/js/main.16c9ae56.chunk.js.map",
     "runtime-main.js": "/social-network-js/static/js/runtime-main.dd7703ef.js",
     "runtime-main.js.map": "/social-network-js/static/js/runtime-main.dd7703ef.js.map",
-    "static/js/2.a0837888.chunk.js": "/social-network-js/static/js/2.a0837888.chunk.js",
-    "static/js/2.a0837888.chunk.js.map": "/social-network-js/static/js/2.a0837888.chunk.js.map",
+    "static/js/2.b555b411.chunk.js": "/social-network-js/static/js/2.b555b411.chunk.js",
+    "static/js/2.b555b411.chunk.js.map": "/social-network-js/static/js/2.b555b411.chunk.js.map",
     "index.html": "/social-network-js/index.html",
-    "static/css/main.04f0e687.chunk.css.map": "/social-network-js/static/css/main.04f0e687.chunk.css.map",
-    "static/js/2.a0837888.chunk.js.LICENSE.txt": "/social-network-js/static/js/2.a0837888.chunk.js.LICENSE.txt",
+    "static/css/main.e1fc4815.chunk.css.map": "/social-network-js/static/css/main.e1fc4815.chunk.css.map",
+    "static/js/2.b555b411.chunk.js.LICENSE.txt": "/social-network-js/static/js/2.b555b411.chunk.js.LICENSE.txt",
     "static/media/ava.56049164.jpg": "/social-network-js/static/media/ava.56049164.jpg",
     "static/media/cover-a1d5b40.428f9943.png": "/social-network-js/static/media/cover-a1d5b40.428f9943.png",
     "static/media/like.d9056709.png": "/social-network-js/static/media/like.d9056709.png",
+    "static/media/preloader.3a3d32d4.gif": "/social-network-js/static/media/preloader.3a3d32d4.gif",
     "static/media/profile.05262aba.png": "/social-network-js/static/media/profile.05262aba.png",
     "static/media/react-icon.661ad6ba.svg": "/social-network-js/static/media/react-icon.661ad6ba.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dd7703ef.js",
-    "static/js/2.a0837888.chunk.js",
-    "static/css/main.04f0e687.chunk.css",
-    "static/js/main.b3a3a64c.chunk.js"
+    "static/js/2.b555b411.chunk.js",
+    "static/css/main.e1fc4815.chunk.css",
+    "static/js/main.16c9ae56.chunk.js"
   ]
 }
