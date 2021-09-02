@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Users.module.css";
 import profile from "../../assets/images/profile.png";
 import {createPages} from "../utils/pagesCreator";
+import {NavLink} from "react-router-dom";
 
 const Users = (props) => {
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize)
@@ -21,7 +22,9 @@ const Users = (props) => {
             {props.users.map(u => <div key={u.id} className={s.userContainer}>
                 <h3>User name: {u.name}</h3>
                 <div>
-                    <img className={s.img} src={u.photos.small != null ? u.photos.small : profile}/>
+                    <NavLink to={'/profile/'+u.id}>
+                        <img className={s.img} src={u.photos.small != null ? u.photos.small : profile}/>
+                    </NavLink>
                 </div>
                 <div>Status: {u.status != null ? u.status : u.status = 'No status'}</div>
                 <div>

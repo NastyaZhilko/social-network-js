@@ -1,11 +1,21 @@
 import photo from "../../../assets/cover-a1d5b40.png";
 import React from "react";
+import Preloader from "../../common/preloader";
 
-export const ProfileInfo = () => {
+export const ProfileInfo = (props) => {
+    if(!props.profile){
+        return <Preloader/>
+    }
+    debugger
     return (
         <div>
-            <img src={photo}/>
-            <div>ava+description</div>
+            <div>
+                <img src={photo}/>
+            </div>
+            <div>
+                <img src={props.profile.photos.large}/>
+                ava+description
+            </div>
         </div>
     )
 }
