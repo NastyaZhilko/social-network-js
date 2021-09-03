@@ -14,8 +14,10 @@ export const ProfileInfo = (props) => {
             </div>
             <div>
                 <img src={props.profile.photos.large}/>
-                ava+description
+                <div>About me: {props.profile.aboutMe}</div>
+                <div>Name: {props.profile.fullName}</div>
             </div>
         </div>
     )
 }
+

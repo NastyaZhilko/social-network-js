@@ -16,7 +16,8 @@ class UsersContainer extends React.Component {
 
     componentDidMount() {
         this.props.setIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`,
+            {withCredentials: true})
             .then(response => {
                 this.props.setUsers(response.data.items)
                 this.props.setUsersTotalCount(response.data.totalCount)
@@ -27,7 +28,9 @@ class UsersContainer extends React.Component {
     onPageChanged = (currentPage) => {
         this.props.setIsFetching(true)
         this.props.setCurrentPage(currentPage)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${currentPage}&count=${this.props.pageSize}`)
+        axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${currentPage}&count=${this.props.pageSize}`,
+            {withCredentials: true}
+        )
             .then(response => {
                 this.props.setUsers(response.data.items)
                 this.props.setIsFetching(false)
@@ -36,18 +39,18 @@ class UsersContainer extends React.Component {
 
     render() {
         return <>
-            { this.props.isFetching ? <Preloader/>
-            :
-            <Users
-            totalUsersCount={this.props.totalUsersCount}
-            pageSize={this.props.pageSize}
-            currentPage={this.props.currentPage}
-            users={this.props.users}
-            unFollow={this.props.unFollow}
-            follow={this.props.follow}
-            onPageChanged={this.onPageChanged}
-        />
-    }
+            {this.props.isFetching ? <Preloader/>
+                :
+                <Users
+                    totalUsersCount={this.props.totalUsersCount}
+                    pageSize={this.props.pageSize}
+                    currentPage={this.props.currentPage}
+                    users={this.props.users}
+                    unFollow={this.props.unFollow}
+                    follow={this.props.follow}
+                    onPageChanged={this.onPageChanged}
+                />
+            }
         </>
     }
 }
@@ -84,7 +87,6 @@ const mapStateToProps = (state) => {
         }
     }
 }*/
-
 
 
 export default connect(mapStateToProps, {
